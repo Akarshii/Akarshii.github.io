@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+  <h2>INCOME TAX CALCULATOR</h2>
+  <div class="container">
+    <div class="monthly-inputField">
+      <span><b>Monthly Income : </b></span> <input type="number" id="month">
+      <button type="button" onclick="AnnualSalary()">show</button>
+      <label><b>Annual Salary:</b> </label>
+      <div class="res" id="annual">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="monthly-inputField2">
+
+    <div class="col-sm-4">
+      <div class="rowst">
+        <span> </span>
+        <input type="text" placeholder="     max ">
+        <input type="text" name="" id="" placeholder="              Actual">
+        <input type="text" placeholder="      Qualifying Amount">
+
+
+      </div>
+
+      <div class="row1">
+        <span><b>Section A :</b></span>
+        <input type="number" id="secA1">
+        <input type="number" name="" id="secA2">
+        <div style="float: right; padding: 0px 8px; margin-right: 470px" class="res" type="text" id="secA3"></div>
+
+      </div>
+
+      <br>
+      <div class="row2">
+        <span><b>Section B :</b></span>
+        <input type="number" id="secB1">
+        <input type="number" name="" id="secB2">
+        <div style="float: right; padding: 0px 8px; margin-right: 470px" class="res" type="text" id="secB3"></div>
+      </div>
+
+      <br>
+      <div class="row3">
+        <span><b>Section C :</b></span>
+        <input type="number" id="secC1">
+        <input type="number" name="" id="secC2">
+        <div style="float: right; padding: 0px 8px; margin-right: 470px" class="res" type="text" id="secC3"></div>
+
+      </div>
+      <br>
+      <div class="row4">
+        <span><b>Section D :</b></span>
+        <input type="number" id="secD1">
+        <input type="number" name="" id="secD2">
+        <div style="float: right; padding: 0px 8px; margin-right: 470px" class="res" type="text" id="secD3"></div>
+
+      </div>
+
+      <br>
+      <div class="TA">
+        <button type="button" onclick="compare()">compare</button>
+        <span> <b>Taxeble Income:</b></span>
+        <div class="res" type="text" id="tax"></div>
+      </div>
+
+
+      <!--  -->
+      <div class="monthly-inputField3">
+
+        <div class="col-sm-4">
+          <div class="rowst2">
+            <span> </span>
+            <input type="text" placeholder="              From ">
+            <input type="text" name="" id="" placeholder="                  To">
+            <input type="text" placeholder="      Tax Percentage">
+            <input type="text" placeholder="         Tax Amount">
+          </div>
+
+
+          <div>
+            <label for="Slab A">Slab A</label>
+            <input type="number" id="FromA" name="FromA" placeholder="Minimum" style="margin-left:8px;">
+            <input type="number" id="ToA" name="ToA" placeholder="Maximum">
+            <input type="number" id="TaxA" name="TaxA" placeholder="Tax Percentage">
+            <input type="number" id="AmountA" name="AmountA" placeholder="Tax Amount" onclick="taxx()">
+          </div>
+
+          <br />
+          <div>
+            <label for="Slab B" >Slab B</label>
+            <input type="number" id="FromB" name="FromB" placeholder="Minimum" style="margin-left:8px;">
+            <input type="number" id="ToB" name="ToB" placeholder="Maximum">
+            <input type="number" id="TaxB" name="TaxB" placeholder="Tax Percentage">
+            <input type="number" id="AmountB" name="AmountB" placeholder="Tax Amount" onclick="taxx()">
+          </div>
+
+          <br />
+
+          <div>
+            <label for="Slab C">Slab C</label>
+            <input type="number" id="FromC" name="FromC" placeholder="Minimum" style="margin-left:8px;">
+            <input type="number" id="ToC" name="ToC" placeholder="Maximum">
+            <input type="number" id="TaxC" name="TaxC" placeholder="Tax Percentage">
+            <input type="number" id="AmountC" name="AmountC" placeholder="Tax Amount" onclick="taxx()">
+          </div>
+
+          <div class="in">
+            <button type="button" class="button" style="margin-left:120px" onclick="taxx()">Calculate</button>
+            <div class="res" type="number" style="margin-left:200px;" id="cal" ></div>
+
+            <span><b>In Words</b></span>
+            <div id="output" class="in_word" style="margin-left:400px"></div>
+              
+          </div>
+
+
+
+        </div>
+        <script src="index.js"></script>
+        <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
